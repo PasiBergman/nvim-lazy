@@ -8,3 +8,6 @@ local opt = vim.opt
 -- help conceallevel
 -- opt.conceallevel = 0
 opt.conceallevel = 3
+
+-- Disable **all animations**
+vim.g.snacks_animate = false
