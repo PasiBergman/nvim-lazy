@@ -12,6 +12,7 @@ return {
         lazy = false, -- Enable Hardtime in lazy filetype
         ["dapui*"] = false, -- Enable Hardtime in filetype starting with dapui
       },
+      disable_mouse = false,
     },
     config = function()
       require("hardtime").setup()
