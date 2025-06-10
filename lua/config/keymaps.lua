@@ -21,15 +21,15 @@ if pcall(require, "CopilotChat") then
   local whichkey = require("which-key")
 
   whichkey.add({
-    { "<leader>a", group = "Copilot Chat", icon = "" },
-    { "<leader>ac", "<cmd>CopilotChat<cr>", mode = "n", desc = "Copilot Chat" },
-    { "<leader>ae", "<cmd>CopilotChatExplain<cr>", mode = "v", desc = "Explain Code" },
-    { "<leader>ar", "<cmd>CopilotChatReview<cr>", mode = "v", desc = "Review Code" },
-    { "<leader>af", "<cmd>CopilotChatFix<cr>", mode = "v", desc = "Fix Code Issues" },
-    { "<leader>ao", "<cmd>CopilotChatOptimize<cr>", mode = "v", desc = "Optimize Issues" },
-    { "<leader>ad", "<cmd>CopilotChatDocs<cr>", mode = "v", desc = "Generate Docs" },
-    { "<leader>at", "<cmd>CopilotChatTest<cr>", mode = "v", desc = "Generate Tests" },
-    { "<leader>am", "<cmd>CopilotChatCommit<cr>", mode = "n", desc = "Generate Commit Message" },
-    { "<leader>as", "<cmd>CopilotChatCommit<cr>", mode = "v", desc = "Generate Commit for Selection" },
+    { "<leader>a", group = "+AI (Copilot Chat)", mode = { "n", "v" }, icon = "" },
+    -- { "<leader>ac", "<cmd>CopilotChat<cr>", mode = "n", desc = "Copilot Chat" },
+    { "<leader>ae", "<cmd>CopilotChatExplain<cr>", mode = "v", desc = "Explain Code (Copilot Chat)" },
+    { "<leader>ar", "<cmd>CopilotChatReview<cr>", mode = "v", desc = "Review Code (Copilot Chat)" },
+    { "<leader>af", "<cmd>CopilotChatFix<cr>", mode = "v", desc = "Fix Code Issues (Copilot Chat)" },
+    { "<leader>ao", "<cmd>CopilotChatOptimize<cr>", mode = "v", desc = "Optimize Issues (Copilot Chat)" },
+    { "<leader>ad", "<cmd>CopilotChatDocs<cr>", mode = "v", desc = "Generate Docs (CopilotChat)" },
+    { "<leader>at", "<cmd>CopilotChatTest<cr>", mode = "v", desc = "Generate Tests (CopilotChat)" },
+    { "<leader>am", "<cmd>CopilotChatCommit<cr>", mode = "n", desc = "Write Commit Message (CopilotChat)" },
+    { "<leader>as", "<cmd>CopilotChatCommit<cr>", mode = "v", desc = "Generate Commit for Selection (CopilotChat)" },
   })
 end

@@ -1,4 +1,6 @@
 return {
-  "echasnovski/mini.indentscope",
-  opts = { enabled = false },
+  {
+    "echasnovski/mini.indentscope",
+    opts = { enabled = false },
+  },
 }
