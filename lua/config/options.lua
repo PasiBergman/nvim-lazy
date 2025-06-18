@@ -2,12 +2,12 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 --
--- help conceallevel
+-- See :help conceallevel
 -- vim.opt.conceallevel = 0
 -- vim.opt.conceallevel = 3
 
 -- Disable **all animations**
--- vim.g.snacks_animate = false
+vim.g.snacks_animate = false
 
 -- Set cursor shape in different modes. See :help guicursor
 -- n  = normal mode
