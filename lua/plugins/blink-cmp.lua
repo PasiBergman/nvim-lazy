@@ -1,3 +1,7 @@
+return {}
+
+-- Fixed: https://github.com/LazyVim/LazyVim/issues/6185
+--[[
 return {
   {
     "saghen/blink.cmp",
@@ -17,3 +21,4 @@ return {
     end,
   },
 }
+--]]
