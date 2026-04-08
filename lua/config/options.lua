@@ -25,3 +25,12 @@ vim.opt.guicursor = "n-v-c-sm:block-bCursor,i-ve:ver25-iCursor,r-cr-o:hor20-hCur
 
 -- Disable conceal in markdown files
 -- See
+--
+--
+--[[
+vim.o.termguicolors = true
+vim.keycode = vim.keycode or function(x)
+  return vim.api.nvim_replace_termcodes(x, true, true, true)
+end
+-- vim.o.termpastefilter = ""
+--]]

@@ -22,14 +22,19 @@ if pcall(require, "CopilotChat") then
 
   whichkey.add({
     { "<leader>a", group = "+AI (Copilot Chat)", mode = { "n", "v" }, icon = "" },
-    -- { "<leader>ac", "<cmd>CopilotChat<cr>", mode = "n", desc = "Copilot Chat" },
-    { "<leader>ae", "<cmd>CopilotChatExplain<cr>", mode = "v", desc = "Explain Code (Copilot Chat)" },
-    { "<leader>ar", "<cmd>CopilotChatReview<cr>", mode = "v", desc = "Review Code (Copilot Chat)" },
-    { "<leader>af", "<cmd>CopilotChatFix<cr>", mode = "v", desc = "Fix Code Issues (Copilot Chat)" },
-    { "<leader>ao", "<cmd>CopilotChatOptimize<cr>", mode = "v", desc = "Optimize Issues (Copilot Chat)" },
-    { "<leader>ad", "<cmd>CopilotChatDocs<cr>", mode = "v", desc = "Generate Docs (CopilotChat)" },
-    { "<leader>at", "<cmd>CopilotChatTest<cr>", mode = "v", desc = "Generate Tests (CopilotChat)" },
-    { "<leader>am", "<cmd>CopilotChatCommit<cr>", mode = "n", desc = "Write Commit Message (CopilotChat)" },
-    { "<leader>as", "<cmd>CopilotChatCommit<cr>", mode = "v", desc = "Generate Commit for Selection (CopilotChat)" },
+    -- { "<leader>aC", "<cmd>CopilotChat<cr>", mode = "n", desc = "Copilot Chat" },
+    { "<leader>ae", "<cmd>CopilotChatExplain<cr>", mode = "v", desc = "Copilot Explain Code" },
+    { "<leader>ar", "<cmd>CopilotChatReview<cr>", mode = "v", desc = "Copilot Review Code" },
+    { "<leader>af", "<cmd>CopilotChatFix<cr>", mode = "v", desc = "Copilot Fix Code Issues" },
+    { "<leader>ao", "<cmd>CopilotChatOptimize<cr>", mode = "v", desc = "Copilot Optimize Issues" },
+    { "<leader>ad", "<cmd>CopilotChatDocs<cr>", mode = "v", desc = "Copilot Generate Docs" },
+    { "<leader>at", "<cmd>CopilotChatTest<cr>", mode = "v", desc = "Copilot Generate Tests" },
+    { "<leader>am", "<cmd>CopilotChatCommit<cr>", mode = "n", desc = "Copilot Write Commit Message" },
+    { "<leader>as", "<cmd>CopilotChatCommit<cr>", mode = "v", desc = "Copilot Generate Commit for Selection" },
+    { "<leader>ac", "<cmd>ClaudeCode toggle<cr>", mode = { "n", "v" }, desc = "ClaudeCode toggle" },
+    { "<leader>as", "<cmd>ClaudeCodeSend selection<cr>", mode = { "n", "v" }, desc = "ClaudeCode Selection" },
+    { "<leader>af", "<cmd>ClaudeCodeSend file<cr>", mode = { "n" }, desc = "ClaudeCode File" },
+    { "<leader>ab", "<cmd>ClaudeCodeSend buffer<cr>", mode = { "n" }, desc = "ClaudeCode Buffer" },
+    { "<leader>ad", "<cmd>ClaudeCodeDiff<cr>", mode = { "n" }, desc = "ClaudeCode Diff" },
   })
 end
