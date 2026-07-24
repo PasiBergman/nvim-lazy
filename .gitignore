@@ -10,3 +10,4 @@ data
 # macOS
 .DS_Store
 lazy-lock.json
+nvim-pack-lock.json

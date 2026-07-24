@@ -34,3 +34,13 @@ vim.keycode = vim.keycode or function(x)
 end
 -- vim.o.termpastefilter = ""
 --]]
+--
+
+-- Try UI2
+-- require("vim._core.ui2").enable()
+
+-- Add build-in plugin nvim.undotree
+vim.cmd.packadd("nvim.undotree")
+
+-- Add build-in difftool plugin nvim.diffview
+vim.cmd.packadd("nvim.difftool")
