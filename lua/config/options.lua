@@ -37,7 +37,7 @@ end
 --
 
 -- Try UI2
--- require("vim._core.ui2").enable()
+require("vim._core.ui2").enable()
 
 -- Add build-in plugin nvim.undotree
 vim.cmd.packadd("nvim.undotree")
