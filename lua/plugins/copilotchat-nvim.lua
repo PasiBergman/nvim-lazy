@@ -9,6 +9,15 @@ return {
   },
   keys = {
     { "<leader>a", "", desc = "+ai Claude/Copilot", mode = { "n", "v" } },
+    { "<leader>aa", false, mode = { "n", "x" } },
+    {
+      "<leader>aA",
+      function()
+        return require("CopilotChat").toggle()
+      end,
+      desc = "Toggle (CopilotChat)",
+      mode = { "n", "x" },
+    },
     { "<leader>ap", "<cmd>CopilotChat<cr>", mode = "n", desc = "Copilot Chat" },
     { "<leader>ae", "<cmd>CopilotChatExplain<cr>", mode = "v", desc = "Copilot Explain" },
     { "<leader>aR", "<cmd>CopilotChatReview<cr>", mode = "v", desc = "Copilot Review" },
