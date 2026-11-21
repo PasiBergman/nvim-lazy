@@ -1,6 +1,10 @@
 return {
   "coder/claudecode.nvim",
-  opts = {},
+  opts = {
+    terminal = {
+      snacks_win_opts = { position = "bottom", height = 0.4, width = 0 },
+    },
+  },
   cmd = {
     "ClaudeCode",
     "ClaudeCodeFocus",
